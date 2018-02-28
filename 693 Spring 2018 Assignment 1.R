@@ -1,8 +1,8 @@
-##STA693 HW1 ##
+##STA693 HW1  ##
 ##Xuan Shi ##
 ##install packages
-install.packages("tidyverse")
-install.packages("nycflights13")
+# install.packages("tidyverse")
+# install.packages("nycflights13")
 
 ## load libraries
 library(tidyverse)
