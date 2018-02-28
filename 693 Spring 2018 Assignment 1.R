@@ -78,10 +78,10 @@ flight_fast[1,]       # fastest flights
 #------------------- part j ------#
 # flights that traveled the longest distance
 flight_far <- flights %>% 
-  arrange(desc(distance))
-flight_far$distance     # 4983 miles is the longest distance
+  filter(distance == max(distance))  # 4983 miles is the longest distance
+flight_far$distance    
 
 # flights that traveled the shortest distance
 flight_close <- flights %>% 
-  arrange(distance)
-flight_close$distance     # 17 miles is the shortest distance
+  filter(distance == min(distance))   # 17 miles is the shortest distance
+flight_close$distance    
